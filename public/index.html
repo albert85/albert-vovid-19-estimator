@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Covid-19 estimator app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <title>Covid Estimator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+        <h1>COVID ESTIMATOR</h1>
+        </div>
+        <div class="content">
+            <form class="form_container">
+                <div class="form_field">   
+                    <label for="population">Population</label> </br>
+                    <input data-population type="number" id="population"/>
+                </div>
+                <div class="form_field">   
+                    <label for="timeToElapse">Time to Elapse</label> </br>
+                    <input data-time-to-elapse type="number" id="timeToElapse"/>
+                </div>
+                <div class="form_field">   
+                    <label for="reportedCases">Reported cases</label> </br>
+                    <input data-reported-cases type="number" id="reportedCases"/>
+                </div>
+                <div class="form_field">   
+                    <label for="totalHospitalBeds">Total Hospital Beds</label> </br>
+                    <input data-total-hospital-beds type="number" id="totalHospitalBeds" />
+                </div>
+                <div class="form_field">   
+                    <label for="periodType">Period type</label> </br>
+                    <select data-period-type id="periodType">
+                        <option>days</option>
+                        <option>weeks</option>
+                        <option>months</option>
+                        </select>
+
+                </div>
+                <button type="button" data-go-estimate>Estimate</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
