@@ -259,4 +259,3 @@ jobs:
         challenge: ch-5
         lang: javascript
       if: always()
-      
